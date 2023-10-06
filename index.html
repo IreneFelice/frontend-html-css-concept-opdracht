@@ -6,58 +6,98 @@
     <title>Rekupe</title>
 </head>
 <body>
-<header>
-    <div class="header-container">
-<ul class="menu">
+<header class="outer-container">
+ <div class="header-container">
+
+    <ul class="menu">
     <li><a href="#cases">Case Studies</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#form">Contact Us</a></li>
-</ul>
-        <div class="header-text">
+    </ul>
+
+    <div class="header-text">
     <h1>Your website is an investment in the success of your business.</h1>
-<p>We are here to help you succeed.</p>
-    <button style= "button"> Let's work together</button>
-            <span><img src="assets/squiggle_line_stripe.svg"</span>
-        </div>
+    <p>We are here to help you succeed.</p>
+        <span class="header-button-container"><button class="header-button" type="button">Let's work together</button></span>
     </div>
+    <div class="header-end-line">
+        <span class="header-line"> <img src="assets/squiggle_line_stripe.svg"</span>
+    </div>
+
+ </div>
 </header>
 
 <main>
-    <section class="hello">
-        <p>Rekupe is a digital agency in Los Angeles.<br>
-            We use strategic UX, SEO optimization and beautiful visual designs to help
-            your business grow.<br>
-            We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.
-            Have a question? Click here to contact us!</p>
-        Have a question? <a href="#form">Click here</a> to contact us!</sub>
+    <section class="hello container">
+        <h2>We use strategic UX, SEO optimization and beautiful visual designs to help
+            your business grow.</h2>
+        <h2>We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.
+            </h2>
+        <sub><p>Have a question? <a href="#form">Click here</a> to contact us!</p></sub>
     </section>
 
-    <section id="cases" class="container-articles">
-
+    <section id="cases">
         <article class="article-1">
-            <item class="column-container-article">
+            <item class="column-container-article1">
                 <h1>Rolling Stone</h1>
                 <span><img src="assets/squiggle_line.svg"/></span>
                 <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
             <a href="">view project</a>
             </item>
-            <span><img src="assets/work-image-01.jpeg" /></span>
+            <div class="image-container1">
+            <span id="img1"><img src="assets/work-image-01.jpeg" /></span>
+            </div>
         </article>
 
-    <article class="article-2"></article>
-    <article class="article-3"></article
+    <article class="article-2">
+        <item class="column-container-article2">
+            <h1>Variety</h1>
+            <span><img src="assets/squiggle_line.svg"/></span>
+            <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content
+                dating back to 1905.</p>
+            <a href="">view project</a>
+        </item>
+        <div class="image-container2">
+        <span id="img2"><img src="assets/work-image-02.jpeg" /></span>
+        </div>
+    </article>
+
+
+        <article class="article-3">
+            <item class="column-container-article3">
+                <h1>Worth</h1>
+                <span><img src="assets/squiggle_line.svg"/></span>
+                <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
+                <a href="">view project</a>
+            </item>
+            <div class="image-container3">
+            <span id="img3"><img src="assets/work-image-03.jpeg" /></span>
+            </div>
+        </article>
     </section>
+
 
     <section id="services" class="grid-services">
         <ul class="container-services">
-            <li><span><img src="assets/icon_graphic-design.svg"/></span><article><h1>Web Design</h1><p>Good web design is how companies stand out from their competitors. High quality web design leads to
+            <li class="item item1"><span><img src="assets/icon_web-design.svg"/></span><article><h1>Web Design</h1><p>Good web design is how companies stand out from their competitors. High quality web design leads to
                 increased user conversion and engagement. Through a proven web design process, we help clients launch websites and
                 products that improve on their bottom line.</p></article></li>
-            <li><img src=""><article></article></li>
-            <li><img src=""><article></article></li>
-            <li><img src=""><article></article></li>
-            <li><img src=""><article></article></li>
-            <li><img src=""><article></article></li>
+            <li class="item item2"><span><img src="assets/icon_web-development.svg"/></span><article><h1>Web Development</h1>Modern websites need to be responsive and fully functional at all sizes. We develop all of our sites
+                with a mobile first approach and ensure that our code quality is clean, organized and performant. Already have a design
+                but need it developed? We’re here to help!</article></li>
+            <li class="item item3"><span><img src="assets/icon_ux.svg"/></span><article><h1>User Experience</h1>In order to build successful products you have to understand the user. We create user personas,
+                wireframes and prototypes to test with users. This allows us to gather feedback which helps to shape the product and can
+                quickly eliminate potential risks – saving you time and money.</article></li>
+            <li class="item item4"><span><img src="assets/icon_graphic-design.svg"/></span><article><h1>Logo Design + Branding</h1>Nike, Apple, Coca-Cola, Starbucks. What do all of these brands have in common? Easily
+                recognizable logos and brand identity. The best brands stand out from the crowd by having a clear and unique point of
+                view. We will work with you to understand your vision and help create a unique brand identity and style guide for your
+                company.</article></li>
+            <li class="item item5"><span><img src="assets/icon_seo.svg"/></span><article><h1>SEO</h1>Do you want your site to rank higher in search results? Google is constantly changing their algorithms for how
+                they rank pages. Don’t worry about constantly playing catch-up. We will make sure your website it optimized, providing
+                you the best opportunities for organic search exposure.</article></li>
+            <li class="item item6"><span><img src="assets/icon_copywriting.svg"/></span><article><h1>Copy Writing</h1></article>Brand messaging needs to be clear, direct and easy to understand to be effective. A unique tone of
+                voice will help you stand out from the crowd and build brand loyalty. We work with you to establish your brand bible and
+                ensure your messaging is focused and targeted.</li>
         </ul>
     </section>
     <section id="form">

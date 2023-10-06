@@ -45,34 +45,308 @@ Grijs #7A7A7A (voor de service-tegel tekst);*/
 }
 
 body{
-background-color: ;
-
-
+    height: 100vh;
+    font-family: 'Roboto', 'Merriweather', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
 }
-h1{
-    color: rebeccapurple;
+
+h1, h2, h3. h4, h5, h6{
+    color: var(--paars);
     font-family: var(--font-family-heading);
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
 }
+
+
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
-
+.outer-container {
+    background: linear-gradient(90deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 70%);
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+/*.container{*/
+/*    width: 80vw;*/
+/*}*/
 
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
-header{
-    background-color: var(--blauw);
 
+.header-container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    text-align: center;
+    flex-basis: 80vw;
 }
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-self: flex-end;
+    padding: 30px 5px;
+}
+
+.menu a {
+    color: var(--lichtpaars);
+    padding: 15px;
+    text-decoration: none;
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+
+    align-items: center;
+    row-gap: 70px;
+    flex-basis: 70vh;
+    padding: 50px;
+    color: var(--lichtpaars);
+}
+
+.header-text h1{
+    font-family: var(--font-family-heading);
+}
+
+.header-text p{
+    font-family: var(--font-family-text);
+    font-size: 20px;
+}
+
+.header-end-line{
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header-button{
+    display: flex;
+    background-color: var(--roze);
+    color: white;
+    font-family: var(--font-family-text);
+    border: none;
+    border-radius: 40px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
+    font-weight: 90;
+}
+
+.header-line{
+    display: flex;
+    height:10vh;
+}
+
+
 /* --------------- 4.2 Introduction ------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.hello h2{
+    color: var(--paars);
+}
+
+.hello{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    align-self: center;
+    text-align: center;
+    width: 50vw;
+    padding: 50px;
+    row-gap: 20px;
+}
+
+/*------------------ 4.3 cases ------------------------------*/
+#cases{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    align-items: center;
+    background-color: var(--lichtgrijs);
+    border: none;
+    row-gap: 50px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-weight: 500;
+}
+
+#cases a{
+    text-decoration: none;
+}
+
+#cases h1{
+    font-family: var(--font-family-heading);
+    font-size: 25px;
+}
+
+#cases p{
+    font-size: 16px;
+}
+
+.article-1{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    column-gap: 10px;
+
+    /*border: 3px dashed yellow;*/
+}
+
+.column-container-article1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10px;
+    flex-grow: 1;
+    row-gap: 15px;
+    /*border: 3px solid darkolivegreen;*/
+    align-self:
+}
+
+.image-container1{
+    display: flex;
+    flex-basis: 50vw;
+    justify-content: flex-end;
+}
 
 
 
+.article-1 #img1{
+    display: flex;
+    height: 400px;
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
+    /*border: 3px solid #7A7A7A;*/
+}
+
+
+
+
+/*--------------------*/
+.article-2{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80vw;
+    align-items: center;
+    column-gap: 10px;
+    /*border: 3px dashed yellow;*/
+}
+
+.column-container-article2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10px;
+    flex-grow: 1;
+    row-gap: 15px;
+    /*border: 3px solid darkolivegreen;*/
+    align-self:
+}
+
+.image-container2{
+    display: flex;
+    flex-basis: 50vw;
+    justify-content: flex-start;
+    /*border: 3px solid #7A7A7A;*/
+}
+
+.article-2 #img2{
+    display: flex;
+    height: 400px;
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
+}
+/*---------------------------------------------*/
+
+.article-3{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    column-gap: 10px;
+
+    /*border: 3px dashed yellow;*/
+}
+
+.column-container-article3{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10px;
+    flex-grow: 1;
+    row-gap: 15px;
+    /*border: 3px solid darkolivegreen;*/
+    align-self:
+}
+
+.image-container3{
+    display: flex;
+    flex-basis: 50vw;
+    justify-content: flex-end;
+}
+
+.article-3 #img3{
+    display: flex;
+    height: 400px;
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
+    /*border: 3px solid #7A7A7A;*/
+}
+
+
+/*------------------------------------------------------------------*/
+.grid-services li{
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    grid-template-rows: 140px 140px;
+    grid-gap: 16px;
+    grid-template-areas:
+       "a b c"
+       "d e f";
+}
+
+.item {
+    background-color: #5B052B;
+    padding: 20px;
+}
+.item1 {
+    grid-area: a;
+}
+
+.item2 {
+    grid-area: b;
+}
+
+.item3 {
+    grid-area: c;
+}
+
+.item4 {
+    grid-area: d;
+}
+.item5 {
+    grid-area: e;
+}
+.item6 {
+    grid-area: f;
+}
+
+
+/*----------------------------------------------------------------------*/
+#form{
+    background-color: darkolivegreen;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
