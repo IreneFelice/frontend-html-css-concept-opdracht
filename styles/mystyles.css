@@ -216,7 +216,7 @@ main{
     flex-grow: 1;
     row-gap: 15px;
     /*border: 3px solid darkolivegreen;*/
-    align-self:
+
 }
 
 .image-container1{
@@ -227,11 +227,20 @@ main{
 
 
 
-.article-1 #img1{
+#img1{
     display: flex;
+    /*aspect-ratio: 1/1;*/
     height: 400px;
+    width: 40vw;
+    flex-shrink: 0;
     box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
-    /*border: 3px solid #7A7A7A;*/
+    background-image: url("../assets/work-image-01.jpeg");
+
+}
+
+
+#img1:hover{
+    background-image: url("../assets/work-image-02.jpeg");
 }
 
 
@@ -254,7 +263,7 @@ main{
     flex-grow: 1;
     row-gap: 15px;
     /*border: 3px solid darkolivegreen;*/
-    align-self:
+
 }
 
 .image-container2{
@@ -277,7 +286,6 @@ main{
     width: 80vw;
     align-items: center;
     column-gap: 10px;
-
     /*border: 3px dashed yellow;*/
 }
 
@@ -288,7 +296,6 @@ main{
     flex-grow: 1;
     row-gap: 15px;
     /*border: 3px solid darkolivegreen;*/
-    align-self:
 }
 
 .image-container3{
@@ -306,22 +313,55 @@ main{
 
 
 /*------------------------------------------------------------------*/
-.grid-services li{
+
+
+
+.grid-services{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.container-services{
     display: grid;
-    grid-template-columns: 140px 140px 140px;
-    grid-template-rows: 140px 140px;
-    grid-gap: 16px;
+    list-style: none;
+    height: 100vh;
+    width: 80vw;
+    /*grid: repeat(2, 60px) / auto-flow 80px;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
     grid-template-areas:
        "a b c"
        "d e f";
+
 }
 
-.item {
-    background-color: #5B052B;
-    padding: 20px;
+.icon-container{
+    display: flex;
+
 }
+
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px var(--paars) solid;
+    box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.6);
+}
+
+.icon{
+    display: flex;
+    max-height: 100px;
+    padding: 10px;
+}
+
 .item1 {
     grid-area: a;
+
 }
 
 .item2 {
@@ -345,7 +385,17 @@ main{
 
 /*----------------------------------------------------------------------*/
 #form{
-    background-color: darkolivegreen;
+    background: linear-gradient(90deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 70%);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 400px;
+    justify-content: center;
+}
+/*----------------------------------------------------------------------*/
+footer{
+    background-color: black;
+    color: white;
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
