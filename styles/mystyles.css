@@ -51,17 +51,34 @@ body{
     font-size: 16px;
 }
 
-h1, h2, h3. h4, h5, h6{
-    color: var(--paars);
-    font-family: var(--font-family-heading);
-    font-size: 20px;
-    text-align: center;
-    margin: 10px;
-}
+
 
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
+h1{
+    color: var(--lichtpaars);
+    font-family: var(--font-family-heading);
+    font-size: 3em;
+
+}
+
+h2{
+    color: var(--paars);
+    font-family: var(--font-family-heading);
+    font-size: 1.9em;
+
+}
+
+h3{
+    color: var(--paars);
+    font-family: var(--font-family-heading);
+    font-size: 1.2em;
+}
+
+p{
+    font-family: var(--font-family-text);
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
@@ -191,12 +208,13 @@ main{
 }
 
 #cases h1{
-    font-family: var(--font-family-heading);
-    font-size: 25px;
+    color: black;
+    font-size: 2em;
 }
 
 #cases p{
     font-size: 16px;
+
 }
 
 .article-1{
@@ -235,12 +253,11 @@ main{
     flex-shrink: 0;
     box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
     background-image: url("../assets/work-image-01.jpeg");
-
 }
 
 
 #img1:hover{
-    background-image: url("../assets/work-image-02.jpeg");
+    background-image: url("../assets/prive-foto.jpg");
 }
 
 
@@ -312,7 +329,7 @@ main{
 }
 
 
-/*------------------------------------------------------------------*/
+/*----------------------services--------------------------------------------*/
 
 
 
@@ -348,6 +365,7 @@ main{
 .item{
     display: flex;
     flex-direction: column;
+    row-gap: 10px;
     padding: 20px;
     border: 2px var(--paars) solid;
     box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.6);
@@ -387,6 +405,8 @@ main{
 #form{
     background: linear-gradient(90deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 70%);
     display: flex;
+    font-family: Merriweather;
+    color: var(--lichtpaars);
     flex-direction: column;
     flex-basis: 100%;
     min-height: 400px;
