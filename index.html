@@ -44,38 +44,38 @@
         <article class="article-1">
             <div class="column-container-article1">
                 <h1>Rolling Stone</h1>
-                <span><img src="assets/squiggle_line.svg" /></span>
+                <span class="squiggle"><img src="assets/squiggle_line.svg" /></span>
                 <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
             <a href="">view project</a>
             </div>
-            <div class="image-container1">
-            <span id="img1"></span>
-<!--                <img />src="assets/work-image-01.jpeg"-->
+            <div class="image-container3">
+                <span class=img-span id="img1"><img src="assets/work-image-01.jpeg" />
+                </span>
             </div>
         </article>
 
     <article class="article-2">
         <div class="column-container-article2">
             <h1>Variety</h1>
-            <span><img src="assets/squiggle_line.svg"/></span>
+            <span class="squiggle"><img src="assets/squiggle_line.svg"/></span>
             <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content
                 dating back to 1905.</p>
             <a href="">view project</a>
         </div>
         <div class="image-container2">
-        <span id="img2"><img src="assets/work-image-02.jpeg" /></span>
+        <span class=img-span id="img2"><img src="assets/work-image-02.jpeg" /></span>
         </div>
     </article>
 
         <article class="article-3">
             <div class="column-container-article3">
                 <h1>Worth</h1>
-                <span><img src="assets/squiggle_line.svg"/></span>
+                <span class="squiggle"><img src="assets/squiggle_line.svg"/></span>
                 <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
                 <a href="">view project</a>
             </div>
             <div class="image-container3">
-            <span id="img3"><img src="assets/work-image-03.jpeg" /></span>
+            <span class=img-span id="img3"><img src="assets/work-image-03.jpeg" /></span>
             </div>
         </article>
     </section>
@@ -121,10 +121,22 @@
 
 <!--Contact----------------------------------------------->
     <form onsubmit="" id="form">
+        <div class="form-content">
         <h1>Let's work together</h1>
         <p>Have a question? Need a quote? Let us know!</p>
-<input id="name" type="text" label="name" placeholder="Name"></input>
-
+            <div class="q q1">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Name" maxLength="30"/>
+            </div>
+            <div class="q q2">
+         <label for="email">Email</label>
+         <input id="email" type="email" placeholder="Email" maxLength="30"/>
+            </div>
+            <div class="q q3">
+                <label for="message">Message</label>
+                <input id="message" type="text" placeholder="Message" maxLength="200"/>
+            </div>
+            <button id="button-form-submit" type="submit">Send</button>
     </form>
 
 

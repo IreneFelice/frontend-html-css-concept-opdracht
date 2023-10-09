@@ -31,6 +31,7 @@ Zwart #0C0C0C (voor standaard tekst);
 Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
 Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
 Grijs #7A7A7A (voor de service-tegel tekst);*/
+
 :root {
     --font-family-heading: 'Merriweather', serif;
     --font-family-text: 'Roboto', sans-serif;
@@ -52,14 +53,16 @@ body{
 }
 
 
-
+img{
+    width: 100%;
+}
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 h1{
     color: var(--lichtpaars);
     font-family: var(--font-family-heading);
-    font-size: 3em;
+    font-size: 3rem;
 
 }
 
@@ -89,9 +92,7 @@ p{
     flex-basis: 100%;
     justify-content: center;
 }
-/*.container{*/
-/*    width: 80vw;*/
-/*}*/
+
 
 /* --------------- 3.2 Other --------------------------- */
 
@@ -102,10 +103,8 @@ p{
 .header-container{
     display: flex;
     flex-direction: column;
-    height: 80vh;
     align-items: center;
     text-align: center;
-    flex-basis: 80vw;
 }
 
 .menu{
@@ -120,18 +119,19 @@ p{
     color: var(--lichtpaars);
     padding: 15px;
     text-decoration: none;
+    shrink: 0;
 }
 
 .header-text{
     display: flex;
     flex-direction: column;
-    width: 50vw;
-
     align-items: center;
-    row-gap: 70px;
-    flex-basis: 70vh;
-    padding: 50px;
+    row-gap: 3em;
+    padding: 5em 20em;
+    margin: 1em;
     color: var(--lichtpaars);
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 
 .header-text h1{
@@ -140,7 +140,7 @@ p{
 
 .header-text p{
     font-family: var(--font-family-text);
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 .header-end-line{
@@ -156,7 +156,7 @@ p{
     font-family: var(--font-family-text);
     border: none;
     border-radius: 40px;
-    padding: 15px 30px;
+    padding: 1.5em 3em;
     text-transform: uppercase;
     box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
     font-weight: 90;
@@ -164,7 +164,7 @@ p{
 
 .header-line{
     display: flex;
-    height:10vh;
+    height:10em;
 }
 
 
@@ -181,12 +181,11 @@ main{
 .hello{
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     align-self: center;
     text-align: center;
-    width: 50vw;
-    padding: 50px;
-    row-gap: 20px;
+    row-gap: 3em;
+    padding: 5em 20em;
+    margin: 1em;
 }
 
 /*------------------ 4.3 cases ------------------------------*/
@@ -207,6 +206,12 @@ main{
     text-decoration: none;
 }
 
+.squiggle{
+    display: flex;
+    max-width: 3em;
+    padding: 1em 0 2.5em 0;
+}
+
 #cases h1{
     color: black;
     font-size: 2em;
@@ -214,7 +219,7 @@ main{
 
 #cases p{
     font-size: 16px;
-
+    color: var(--grijs);
 }
 
 .article-1{
@@ -223,8 +228,6 @@ main{
     width: 80vw;
     align-items: center;
     column-gap: 10px;
-
-    /*border: 3px dashed yellow;*/
 }
 
 .column-container-article1{
@@ -233,32 +236,26 @@ main{
     flex-basis: 10px;
     flex-grow: 1;
     row-gap: 15px;
-    /*border: 3px solid darkolivegreen;*/
-
 }
 
 .image-container1{
     display: flex;
-    flex-basis: 50vw;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
     justify-content: flex-end;
 }
 
-
-
-#img1{
+.article-1 #img1{
     display: flex;
-    /*aspect-ratio: 1/1;*/
     height: 400px;
-    width: 40vw;
-    flex-shrink: 0;
     box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
-    background-image: url("../assets/work-image-01.jpeg");
 }
 
 
-#img1:hover{
-    background-image: url("../assets/prive-foto.jpg");
-}
+/*#img1:hover{*/
+/*    background-image: url("../assets/prive-foto.jpg");*/
+/*}*/
 
 
 
@@ -270,7 +267,6 @@ main{
     width: 80vw;
     align-items: center;
     column-gap: 10px;
-    /*border: 3px dashed yellow;*/
 }
 
 .column-container-article2{
@@ -279,15 +275,12 @@ main{
     flex-basis: 10px;
     flex-grow: 1;
     row-gap: 15px;
-    /*border: 3px solid darkolivegreen;*/
-
 }
 
 .image-container2{
     display: flex;
     flex-basis: 50vw;
     justify-content: flex-start;
-    /*border: 3px solid #7A7A7A;*/
 }
 
 .article-2 #img2{
@@ -303,7 +296,6 @@ main{
     width: 80vw;
     align-items: center;
     column-gap: 10px;
-    /*border: 3px dashed yellow;*/
 }
 
 .column-container-article3{
@@ -312,12 +304,13 @@ main{
     flex-basis: 10px;
     flex-grow: 1;
     row-gap: 15px;
-    /*border: 3px solid darkolivegreen;*/
 }
 
 .image-container3{
     display: flex;
-    flex-basis: 50vw;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
     justify-content: flex-end;
 }
 
@@ -325,7 +318,6 @@ main{
     display: flex;
     height: 400px;
     box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
-    /*border: 3px solid #7A7A7A;*/
 }
 
 
@@ -347,19 +339,16 @@ main{
     list-style: none;
     height: 100vh;
     width: 80vw;
-    /*grid: repeat(2, 60px) / auto-flow 80px;*/
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 50px;
     grid-template-areas:
        "a b c"
        "d e f";
-
 }
 
 .icon-container{
     display: flex;
-
 }
 
 .item{
@@ -379,7 +368,6 @@ main{
 
 .item1 {
     grid-area: a;
-
 }
 
 .item2 {
@@ -405,13 +393,73 @@ main{
 #form{
     background: linear-gradient(90deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 70%);
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-family: Merriweather;
     color: var(--lichtpaars);
     flex-direction: column;
-    flex-basis: 100%;
-    min-height: 400px;
-    justify-content: center;
 }
+
+/*display: flex;*/
+/*flex-direction: column;*/
+/*!*width: 50vw;*!*/
+/*align-items: center;*/
+/*row-gap: 3em;*/
+/*padding: 5em 20em;*/
+/*margin: 1em;*/
+/*color: var(--lichtpaars);*/
+/*flex-grow: 0;*/
+/*flex-shrink: 1;*/
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+    justify-content: space-around;
+}
+
+::placeholder{
+    font-family: var(--font-family-text);
+    color: grey;
+}
+
+.q {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-text);
+}
+
+.q input{
+    border-radius: 3px;
+    border-color: lightgray;
+    width: 60vw;
+    padding: 10px;
+}
+
+.q3 input{
+    display: flex;
+row-span: 10;
+    overflow: auto;
+    height: 100px;
+}
+
+#button-form-submit{
+    display: flex;
+    background-color: var(--roze);
+    color: white;
+    font-family: var(--font-family-text);
+    justify-content: center;
+    width: 200px;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
+    font-weight: 90;
+}
+
+
 /*----------------------------------------------------------------------*/
 footer{
     background-color: black;
