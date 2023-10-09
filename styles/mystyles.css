@@ -1,5 +1,7 @@
 
-@import url( );
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 
 * {
     padding: 0;
@@ -22,20 +24,74 @@
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+/*Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);*/
+
 :root {
+    --font-family-heading: 'Merriweather', serif;
+    --font-family-text: 'Roboto', sans-serif;
 
-
+    --paars: #5722CD;
+    --blauw: #4845E4;
+    --roze: #ED4385;
+    --zwart: #0C0C0C;
+    --lichtpaars: #F2F0FF;
+    --lichtgrijs: #F3F6F9;
+    --grijs: #7A7A7A;
 }
 
 body{
+    height: 100vh;
+    font-family: 'Roboto', 'Merriweather', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+img{
+    width: 100%;
+}
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1{
+    color: var(--lichtpaars);
+    font-family: var(--font-family-heading);
+    font-size: 3rem;
 
 }
 
-/* ------------------------------- 2. Typography ----------------------------------- */
+h2{
+    color: var(--paars);
+    font-family: var(--font-family-heading);
+    font-size: 1.9em;
+
+}
+
+h3{
+    color: var(--paars);
+    font-family: var(--font-family-heading);
+    font-size: 1.2em;
+}
+
+p{
+    font-family: var(--font-family-text);
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
+.outer-container {
+    background: linear-gradient(90deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 70%);
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
 
 
 /* --------------- 3.2 Other --------------------------- */
@@ -44,9 +100,371 @@ body{
 
 /* --------------- 4.1 Header ------------------------- */
 
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-self: flex-end;
+    padding: 30px 5px;
+}
+
+.menu a {
+    color: var(--lichtpaars);
+    padding: 15px;
+    text-decoration: none;
+    shrink: 0;
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3em;
+    padding: 5em 20em;
+    margin: 1em;
+    color: var(--lichtpaars);
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.header-text h1{
+    font-family: var(--font-family-heading);
+}
+
+.header-text p{
+    font-family: var(--font-family-text);
+    font-size: 1.5em;
+}
+
+.header-end-line{
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header-button{
+    display: flex;
+    background-color: var(--roze);
+    color: white;
+    font-family: var(--font-family-text);
+    border: none;
+    border-radius: 40px;
+    padding: 1.5em 3em;
+    text-transform: uppercase;
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
+    font-weight: 90;
+}
+
+.header-line{
+    display: flex;
+    height:10em;
+}
+
+
 /* --------------- 4.2 Introduction ------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.hello h2{
+    color: var(--paars);
+}
+
+.hello{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    row-gap: 3em;
+    padding: 5em 20em;
+    margin: 1em;
+}
+
+/*------------------ 4.3 cases ------------------------------*/
+#cases{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    align-items: center;
+    background-color: var(--lichtgrijs);
+    border: none;
+    row-gap: 50px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-weight: 500;
+}
+
+#cases a{
+    text-decoration: none;
+}
+
+.squiggle{
+    display: flex;
+    max-width: 3em;
+    padding: 1em 0 2.5em 0;
+}
+
+#cases h1{
+    color: black;
+    font-size: 2em;
+}
+
+#cases p{
+    font-size: 16px;
+    color: var(--grijs);
+}
+
+.article-1{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.column-container-article1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10px;
+    flex-grow: 1;
+    row-gap: 15px;
+}
+
+.image-container1{
+    display: flex;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content: flex-end;
+}
+
+.article-1 #img1{
+    display: flex;
+    height: 400px;
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+/*#img1:hover{*/
+/*    background-image: url("../assets/prive-foto.jpg");*/
+/*}*/
 
 
 
+
+/*--------------------*/
+.article-2{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80vw;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.column-container-article2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10px;
+    flex-grow: 1;
+    row-gap: 15px;
+}
+
+.image-container2{
+    display: flex;
+    flex-basis: 50vw;
+    justify-content: flex-start;
+}
+
+.article-2 #img2{
+    display: flex;
+    height: 400px;
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
+}
+/*---------------------------------------------*/
+
+.article-3{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.column-container-article3{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10px;
+    flex-grow: 1;
+    row-gap: 15px;
+}
+
+.image-container3{
+    display: flex;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content: flex-end;
+}
+
+.article-3 #img3{
+    display: flex;
+    height: 400px;
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+/*----------------------services--------------------------------------------*/
+
+
+
+.grid-services{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.container-services{
+    display: grid;
+    list-style: none;
+    height: 100vh;
+    width: 80vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+    grid-template-areas:
+       "a b c"
+       "d e f";
+}
+
+.icon-container{
+    display: flex;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px;
+    border: 2px var(--paars) solid;
+    box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.6);
+}
+
+.icon{
+    display: flex;
+    max-height: 100px;
+    padding: 10px;
+}
+
+.item1 {
+    grid-area: a;
+}
+
+.item2 {
+    grid-area: b;
+}
+
+.item3 {
+    grid-area: c;
+}
+
+.item4 {
+    grid-area: d;
+}
+.item5 {
+    grid-area: e;
+}
+.item6 {
+    grid-area: f;
+}
+
+
+/*----------------------------------------------------------------------*/
+#form{
+    background: linear-gradient(90deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 70%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Merriweather;
+    color: var(--lichtpaars);
+    flex-direction: column;
+}
+
+/*display: flex;*/
+/*flex-direction: column;*/
+/*!*width: 50vw;*!*/
+/*align-items: center;*/
+/*row-gap: 3em;*/
+/*padding: 5em 20em;*/
+/*margin: 1em;*/
+/*color: var(--lichtpaars);*/
+/*flex-grow: 0;*/
+/*flex-shrink: 1;*/
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+    justify-content: space-around;
+}
+
+::placeholder{
+    font-family: var(--font-family-text);
+    color: grey;
+}
+
+.q {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-text);
+}
+
+.q input{
+    border-radius: 3px;
+    border-color: lightgray;
+    width: 60vw;
+    padding: 10px;
+}
+
+.q3 input{
+    display: flex;
+row-span: 10;
+    overflow: auto;
+    height: 100px;
+}
+
+#button-form-submit{
+    display: flex;
+    background-color: var(--roze);
+    color: white;
+    font-family: var(--font-family-text);
+    justify-content: center;
+    width: 200px;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.25);
+    font-weight: 90;
+}
+
+
+/*----------------------------------------------------------------------*/
+footer{
+    background-color: black;
+    color: white;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
